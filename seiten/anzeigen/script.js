@@ -13,9 +13,9 @@ window.onload = function () {
     if (schwierigkeit == 0) {
         setTimeout(spielStart, 5000)
     } else if (schwierigkeit == 1) {
-        setTimeout(spielStart, 4000)
-    } else {
         setTimeout(spielStart, 3000)
+    } else {
+        setTimeout(spielStart, 2000)
     }
 
 }
@@ -50,11 +50,11 @@ function spielfeldGenerieren(schwierigkeit) {
         for (let j = 0; j < 5; j++) {
             let zufaelligeZahl
             if (schwierigkeit == 0) {
-                zufaelligeZahl = zufallsZahl(0, 20)
+                zufaelligeZahl = zufallsZahl(0, 30)
             } else if (schwierigkeit == 1) {
-                zufaelligeZahl = zufallsZahl(0, 15)
+                zufaelligeZahl = zufallsZahl(0, 25)
             } else {
-                zufaelligeZahl = zufallsZahl(0, 10)
+                zufaelligeZahl = zufallsZahl(0, 20)
             }
 
             if (zufaelligeZahl <= 5) {
