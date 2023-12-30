@@ -54,7 +54,7 @@ function spielfeldGenerieren(schwierigkeit) {
             } else if (schwierigkeit == 1) {
                 zufaelligeZahl = zufallsZahl(0, 25)
             } else {
-                zufaelligeZahl = zufallsZahl(0, 20)
+                zufaelligeZahl = zufallsZahl(0, 10)
             }
 
             if (zufaelligeZahl <= 5) {
