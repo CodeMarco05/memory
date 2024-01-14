@@ -4,7 +4,7 @@ body {
     background-blend-mode: lighten;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
+    /**display: flex;**/
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -12,15 +12,17 @@ body {
 }
 
 .grid-container {
+    margin-top: 60px;
     display: grid;
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 10px;
+    width: 90%;
 }
 
 .grid-item {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     border: 1px solid #000;
     text-align: center;
     line-height: 100px;
@@ -29,13 +31,14 @@ body {
 }
 
 .knopf{
-    margin-left: 40px;
+    margin-top: 30px;
     border: 2px solid black;
     padding: 10px;
     min-width: 100px;
     font-size: 20px;
     text-align: center;
     cursor: pointer;
+    width: 80%;
     border-radius: 5px;
     background-color: rgba(144, 238, 144, 0.5);
 }
